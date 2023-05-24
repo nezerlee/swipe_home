@@ -36,6 +36,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   appinio_swiper: ^2.0.0
+  flutter_svg:
 
 dev_dependencies:
   flutter_test:
@@ -60,7 +61,9 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  assets:    - assets/    - assets/image/
+  assets:
+    - assets/
+    - assets/images/
 
 
   #   - images/a_dot_burr.jpeg
@@ -77,10 +80,12 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+    - family: Nunito
+      fonts:
+        - asset: assets/fonts/nunito/Nunito-Regular.ttf
+        - asset: assets/fonts/nunito/Nunito-ExtraBold.ttf
+          weight: 400
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
